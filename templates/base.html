@@ -1,9 +1,9 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Video Analysis & Report Generator</title>
+  <title>SoME AI</title>
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
@@ -44,7 +44,7 @@
     
     .hero-section {
       position: relative;
-      padding: 120px 0;
+      padding: 250px 0 120px 0;
       background: var(--gradient-1);
       overflow: hidden;
     }
@@ -218,8 +218,8 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="{{ url_for('index') }}">
-        <img src="https://www.some.education/assets/img/logo/logo.png" alt="Logo" height="50" class="me-2">
-        <span class="fw-bold" style="letter-spacing: 1px; color: var(--primary-blue);">School of Meaningful Experiences </span>
+        <img src="https://www.some.education/assets/img/logo/logo.png" alt="Logo" height="60" class="me-2">
+        <span class="fw-bold" style="letter-spacing: 1px; style="color: var(--accent);">SoME AI</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -229,6 +229,15 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('index') }}" style="color: var(--primary-blue);">Home</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.some.education/" style="color: var(--primary-blue);">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.some.education/recent-blogs" style="color: var(--primary-blue);">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.some.education/media" style="color: var(--primary-blue);">Media</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -236,17 +245,12 @@
 
   <!-- Hero Section -->
   <body>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="floating-blobs">
-        <div class="blob" style="width: 400px; height: 400px; top: -100px; left: -100px; background: rgba(79, 34, 99, 0.15);"></div>
-        <div class="blob" style="width: 300px; height: 300px; bottom: -50px; right: -100px; background: rgba(236, 116, 34, 0.1);"></div>
-      </div>
       <div class="container text-center hero-content">
         <h1 class="display-3 fw-bold text-white mb-4 animate__animated animate__fadeInDown">
-          Transform Video Content into<br>
+          <p></p><br><br>
+          <span style="color: var(--accent);">AI Powered Interview Grading System</span><br>
           <span class="text-gradient" style="background-image: linear-gradient(120deg, #ec7422 0%,rgb(26, 130, 221) 100%);">
-            Actionable Insights
+            ReImagined
           </span>
         </h1>
         <p class="lead text-white-80 mb-5 fs-4 animate__animated animate__fadeIn">
@@ -283,7 +287,7 @@
   <!-- Footer -->
   <footer class="text-center">
     <div class="container">
-      <p style="color: var(--primary-blue);">&copy; {{ current_year if current_year else "2025" }} SOME ANALYTICS. All rights reserved.</p>
+      <p style="color: var(--primary-blue);">&copy; {{ current_year if current_year else "2025" }} SoME. All rights reserved.</p>
     </div>
   </footer>
 
